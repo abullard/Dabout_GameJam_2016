@@ -2,31 +2,17 @@
 using System.Collections;
 
 public class CannonBall : MonoBehaviour {
-	public GameObject prefab;
-    public Transform target;
-    public float thrust = 10f;
-    // Update is called once per frame
-    IEnumerator Start()
-    {
+    public GameObject Explosion;
 
-        yield return new WaitForSeconds(Random.Range(0f,2f));
-        
-        while (true)
-        {
-            if (target)
-                transform.LookAt(target);
-            
-            GameObject projectile = (GameObject)Instantiate(prefab, transform.position, transform.rotation);
-            projectile.GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward * thrust, ForceMode.VelocityChange);
-            yield return new WaitForSeconds(1.5f);
-        }
-    }
-
-    void OnTriggerEnter(Collider other)
+    void OnCollisionEnter(Collision collision)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            target = other.gameObject.transform;
+            ContactPoint contact = collision.contacts[0];
+            Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);
+            Vector3 pos = contact.point;
+            Instantiate(Explosion, pos, rot);
+            Destroy(gameObject);
         }
     }
 }
