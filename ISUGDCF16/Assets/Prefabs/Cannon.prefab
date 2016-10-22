@@ -188,6 +188,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 1000011092939418, guid: 4eddbfcfb25091e4088ef177fab63c46, type: 2}
   target: {fileID: 0}
+  thrust: 60
 --- !u!135 &135000010573500452
 SphereCollider:
   m_ObjectHideFlags: 1
