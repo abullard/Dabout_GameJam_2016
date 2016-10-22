@@ -189,6 +189,7 @@ MonoBehaviour:
   prefab: {fileID: 1000011092939418, guid: 4eddbfcfb25091e4088ef177fab63c46, type: 2}
   target: {fileID: 0}
   thrust: 60
+  Explosion: {fileID: 1000010859231926, guid: bedcde7526e2e4d41be6f36ff9c28703, type: 2}
 --- !u!135 &135000010573500452
 SphereCollider:
   m_ObjectHideFlags: 1
