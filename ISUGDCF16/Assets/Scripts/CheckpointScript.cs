@@ -4,22 +4,18 @@ using System.Collections;
 public class CheckpointScript : MonoBehaviour {
 
     public Text checkpointText;
-    public GameObject checkpoint;
-    private GameObject currentSpawn;
+    public GameObject spawnPoint;
 
-	// Use this for initialization
-	void Start () {
-	    
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	    
-	}
-
-    void OnTriggerEnter(Collider2D other) {
+    //Set's player's spawn point, and displays 
+    void OnTriggerEnter(Collider other) {
         if(other.gameObject.CompareTag("Player")) {
             Player.player.setSpawn(transform);
+            checkpointText.text = "Checkpoint";
+            Invoke("hideText", 2f);
         }
+    }
+
+    void hideText() {
+        checkpointText.text = "";
     }
 }
