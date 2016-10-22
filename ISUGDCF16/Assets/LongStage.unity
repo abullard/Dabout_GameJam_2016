@@ -830,7 +830,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 836825142}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.58, y: 1.6, z: 10.647653}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -1355,7 +1355,7 @@ ParticleSystem:
   moveWithTransform: 0
   autoRandomSeed: 1
   scalingMode: 1
-  randomSeed: -1289072539
+  randomSeed: -1739223268
   InitialModule:
     serializedVersion: 2
     enabled: 1
@@ -3573,7 +3573,6 @@ GameObject:
   - 33: {fileID: 2142741870}
   - 136: {fileID: 2142741869}
   - 23: {fileID: 2142741868}
-  - 114: {fileID: 2142741874}
   - 114: {fileID: 2142741873}
   - 114: {fileID: 2142741872}
   - 54: {fileID: 2142741875}
@@ -3681,17 +3680,6 @@ MonoBehaviour:
     m_Bits: 1
   spawnAt: {fileID: 836825143}
   spawnParticles: {fileID: 1717695613}
---- !u!114 &2142741874
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2142741867}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2660007089f964dcfb6b59b66cdbe9f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &2142741875
 Rigidbody:
   m_ObjectHideFlags: 0
