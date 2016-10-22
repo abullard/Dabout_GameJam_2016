@@ -38,9 +38,9 @@ public class PlayerInput : MonoBehaviour{
 		
 		Debug.DrawRay(transform.position, dir, Color.green);
 		Debug.DrawRay(transform.position, transform.forward, Color.blue);
-			
+
 		if(Input.GetButtonDown("Jump")){
-			if(Physics.CheckSphere(transform.TransformPoint(Vector3.down), 0.2f, ground)){
+			if(Physics.CheckSphere(transform.TransformPoint(Vector3.down), 0.3f, ground)){
 				rigidbody.AddForce(Vector3.up * jumpSpeed * endurance, ForceMode.VelocityChange);
 			}
 		}
