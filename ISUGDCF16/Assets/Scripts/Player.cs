@@ -7,6 +7,7 @@ public class Player : MonoBehaviour{
 
 	public float endurance = 1f; // how fast he can get up and stay upright, lowered when he gets hurt
 	public float recoveryRate = 1f; // how fast he recovers
+    public bool recovering = false;
 
 
 	public float runSpeed = 2f;
