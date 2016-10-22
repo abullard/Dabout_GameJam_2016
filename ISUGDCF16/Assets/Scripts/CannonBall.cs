@@ -14,7 +14,7 @@ public class CannonBall : MonoBehaviour {
         {
             if (target)
                 transform.LookAt(target);
-            float thrust = 1500f;
+            float thrust = 1000f;
             GameObject projectile = (GameObject)Instantiate(prefab, transform.position, transform.rotation);
             projectile.GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward * thrust);
             yield return new WaitForSeconds(1.5f);
