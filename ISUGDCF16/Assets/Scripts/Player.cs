@@ -15,7 +15,10 @@ public class Player : MonoBehaviour{
 	public float turningStrength = 10f;
 	
 	public LayerMask ground; // if he is standing on this he may jump
-	
+
+	public Animator animator;
+
+
 	Rigidbody rigidbody;
 	Vector3 dir = Vector3.zero;
 
@@ -29,6 +32,8 @@ public class Player : MonoBehaviour{
 
 	public void respawn(){
 		if(spawnAt){
+			rigidbody.velocity = Vector3.zero;
+			rigidbody.angularVelocity = Vector3.zero;
 			transform.position = spawnAt.position;
 			transform.rotation = spawnAt.rotation;
 			spawnParticles.Play();
@@ -68,6 +73,8 @@ public class Player : MonoBehaviour{
 		if(Input.GetKeyDown(KeyCode.R)){
 			respawn();
 		}
+
+		animator.speed = dir.sqrMagnitude;
 	}
 	
 	void FixedUpdate(){
