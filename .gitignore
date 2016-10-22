@@ -6,4 +6,11 @@ ISUGDCF16/Library
 Assembly-CSharp.csproj
 ISUGDCF16.sln
 ISUGDCF16/Temp
+<<<<<<< HEAD
+Assembly-CSharp-firstpass.csproj
+ISUGDCF16/.vs/
+ISUGDCF16/ISUGDCF16.CSharp.csproj
+=======
 ISUGDCF16/ISUGDCF16.userprefs
+>>>>>>> fb52506f9a0fc6bafdd70237deca91c63d294d76
+.DS_Store
