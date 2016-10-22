@@ -17,7 +17,7 @@ public class CameraController : MonoBehaviour {
         anchor.transform.position = player.transform.position;
 
         euler.y += Input.GetAxis("Mouse X") * cameraSpeed * Time.deltaTime;
-        euler.x += Input.GetAxis("Mouse Y") * cameraSpeed * Time.deltaTime;
+        euler.x -= Input.GetAxis("Mouse Y") * cameraSpeed * Time.deltaTime;
 
         euler.x = Mathf.Clamp(euler.x, -30f, 70f);
         anchor.transform.eulerAngles = euler;
