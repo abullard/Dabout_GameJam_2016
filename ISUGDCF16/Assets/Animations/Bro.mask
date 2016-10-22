@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1011 &101100000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Bro
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Bro
+    m_Weight: 1
+  - m_Path: Pelvis
+    m_Weight: 1
+  - m_Path: Pelvis/abs
+    m_Weight: 1
+  - m_Path: Pelvis/abs/neck
+    m_Weight: 1
+  - m_Path: Pelvis/abs/neck/shoulder
+    m_Weight: 1
+  - m_Path: Pelvis/abs/neck/shoulder/elbow
+    m_Weight: 1
+  - m_Path: Pelvis/abs/neck/shoulder/elbow/wrist
+    m_Weight: 1
+  - m_Path: Pelvis/abs/neck/shoulder.1
+    m_Weight: 1
+  - m_Path: Pelvis/abs/neck/shoulder.1/elbow.1
+    m_Weight: 1
+  - m_Path: Pelvis/abs/neck/shoulder.1/elbow.1/wrist.1
+    m_Weight: 1
+  - m_Path: Pelvis/hip
+    m_Weight: 1
+  - m_Path: Pelvis/hip/knee
+    m_Weight: 1
+  - m_Path: Pelvis/hip/knee/foot
+    m_Weight: 1
+  - m_Path: Pelvis/hip.1
+    m_Weight: 1
+  - m_Path: Pelvis/hip.1/knee.1
+    m_Weight: 1
+  - m_Path: Pelvis/hip.1/knee.1/foot.1
+    m_Weight: 1
+  - m_Path: spare bro
+    m_Weight: 1
+  - m_Path: spare bro/hat
+    m_Weight: 1
+  - m_Path: spareHat
+    m_Weight: 1
