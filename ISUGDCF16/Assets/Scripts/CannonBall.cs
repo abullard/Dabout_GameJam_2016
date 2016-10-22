@@ -4,6 +4,7 @@ using System.Collections;
 public class CannonBall : MonoBehaviour {
 	public GameObject prefab;
     public Transform target;
+    public float thrust = 10f;
     // Update is called once per frame
     IEnumerator Start()
     {
@@ -14,9 +15,9 @@ public class CannonBall : MonoBehaviour {
         {
             if (target)
                 transform.LookAt(target);
-            float thrust = 1500f;
+            
             GameObject projectile = (GameObject)Instantiate(prefab, transform.position, transform.rotation);
-            projectile.GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward * thrust);
+            projectile.GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward * thrust, ForceMode.VelocityChange);
             yield return new WaitForSeconds(1.5f);
         }
     }

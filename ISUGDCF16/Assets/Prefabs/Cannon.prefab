@@ -54,6 +54,7 @@ GameObject:
   - 33: {fileID: 33000011196922872}
   - 23: {fileID: 23000010932794384}
   - 135: {fileID: 135000010573500452}
+  - 114: {fileID: 114000012338222620}
   m_Layer: 0
   m_Name: Cannon toooob
   m_TagString: Untagged
@@ -68,7 +69,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011307935724}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -3.66, y: 0, z: -3.81}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -174,6 +175,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012784614746}
   m_Mesh: {fileID: 4300000, guid: 36921c4808b974b98838cf988806949c, type: 3}
+--- !u!114 &114000012338222620
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012784614746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c390a103c14ae2c46a01d41b168713f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 1000011092939418, guid: 4eddbfcfb25091e4088ef177fab63c46, type: 2}
+  target: {fileID: 0}
+  thrust: 60
 --- !u!135 &135000010573500452
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -181,7 +196,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012784614746}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 10
