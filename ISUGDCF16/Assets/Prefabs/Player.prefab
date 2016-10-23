@@ -37,7 +37,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000012056458930}
   - 95: {fileID: 95000011372362950}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52,7 +52,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000012347390300}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: shoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67,7 +67,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000012345683542}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: foot.1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,7 +82,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000012516968270}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wrist.1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000012892908732}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000013636675378}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: knee.1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -127,7 +127,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000011429603134}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: shoulder.1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,7 +142,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000010950031838}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elbow.1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -157,7 +157,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000012712376984}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elbow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -172,7 +172,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000010996124358}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wrist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -187,7 +187,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000012539169578}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: abs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -222,7 +222,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000010742013878}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pelvis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -237,7 +237,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000010022326634}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -252,7 +252,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000011709999654}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -268,7 +268,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000012015457742}
   - 137: {fileID: 137000010971359932}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -283,7 +283,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000012814609658}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: knee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -298,7 +298,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000011886868292}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hip.1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -647,7 +647,7 @@ MonoBehaviour:
   pelvis: {fileID: 1000012487784384}
   maxSpring: 100
   maxDamp: 1
-  invisible: {fileID: 2100000, guid: d39960c14dfaf88489d1798913453dd1, type: 2}
+  invisible: {fileID: 2100000, guid: 3366e4aa627b04bd0836dbe3d9c5e67c, type: 2}
   springJoints: []
 --- !u!136 &136000013180861750
 CapsuleCollider:
