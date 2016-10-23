@@ -75,6 +75,11 @@ public class Player : MonoBehaviour{
 			respawn();
 		}
 
+		if(Input.GetKey(KeyCode.LeftShift))
+			animator.SetLayerWeight(1, 1f);
+		else
+			animator.SetLayerWeight(1, 0f);
+
 		animator.speed = dir.sqrMagnitude;
 	}
 	
