@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: a79a6b8b53b5d35459937e5dc8b95079
+timeCreated: 1477199239
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Ancient Geek
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 0f1a72dec5f3fb44fbe71106918e792e, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
