@@ -25,16 +25,16 @@ public class MovingTile : MonoBehaviour {
     void Update()
     {
         if (dirRight)
-            transform.Translate(Vector3.forward * speed * Time.deltaTime);
+            transform.Translate(Vector3.left * speed * Time.deltaTime);
         else
-            transform.Translate(Vector3.back * speed * Time.deltaTime);
+            transform.Translate(Vector3.right * speed * Time.deltaTime);
 
-        if (transform.position.z >= rightMax)
+        if (transform.position.x >= rightMax)
         {
             dirRight = false;
         }
 
-        if (transform.position.z <= leftMax)
+        if (transform.position.x <= leftMax)
         {
             dirRight = true;
         }
