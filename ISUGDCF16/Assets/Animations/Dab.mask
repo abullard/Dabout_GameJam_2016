@@ -5,15 +5,15 @@ AvatarMask:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Bro
+  m_Name: Dab
   m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
   m_Elements:
   - m_Path: 
     m_Weight: 1
   - m_Path: Bro
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Pelvis
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Pelvis/abs
     m_Weight: 1
   - m_Path: Pelvis/abs/neck
@@ -31,20 +31,14 @@ AvatarMask:
   - m_Path: Pelvis/abs/neck/shoulder.1/elbow.1/wrist.1
     m_Weight: 1
   - m_Path: Pelvis/hip
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Pelvis/hip/knee
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Pelvis/hip/knee/foot
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Pelvis/hip.1
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Pelvis/hip.1/knee.1
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Pelvis/hip.1/knee.1/foot.1
-    m_Weight: 1
-  - m_Path: spare bro
-    m_Weight: 1
-  - m_Path: spare bro/hat
-    m_Weight: 1
-  - m_Path: spareHat
-    m_Weight: 1
+    m_Weight: 0
