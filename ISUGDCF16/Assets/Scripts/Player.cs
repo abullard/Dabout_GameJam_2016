@@ -75,9 +75,17 @@ public class Player : MonoBehaviour{
 			respawn();
 		}
 
+		if(Input.GetKey(KeyCode.LeftShift))
+			dab = Mathf.Lerp(dab, 1f, Time.deltaTime);
+		else
+			dab = Mathf.Lerp(dab, 0f, Time.deltaTime);
+		animator.SetLayerWeight(1, dab);
+
 		animator.speed = dir.sqrMagnitude;
 	}
-	
+
+	float dab = 0f;
+
 	void FixedUpdate(){
 
 		rigidbody.AddForce(dir * runSpeed * endurance, ForceMode.Acceleration);

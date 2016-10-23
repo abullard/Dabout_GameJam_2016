@@ -1,22 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Cannon : MonoBehaviour {
-	public GameObject prefab;
+public class Cannon : MonoBehaviour
+{
+    public GameObject prefab;
+    public float thrust;
     public Transform target;
-    public float thrust = 10f;
+    public Transform defaultTarget;
 
     // Update is called once per frame
     IEnumerator Start()
     {
-
-        yield return new WaitForSeconds(Random.Range(0f,2f));
-        
+        transform.parent.forward = transform.forward;
+        yield return new WaitForSeconds(Random.Range(0f, 2f));
         while (true)
         {
-            if (target)
-                transform.LookAt(target);
-            
             GameObject projectile = (GameObject)Instantiate(prefab, transform.position, transform.rotation);
             projectile.GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward * thrust, ForceMode.VelocityChange);
             yield return new WaitForSeconds(1.5f);
@@ -31,11 +29,12 @@ public class Cannon : MonoBehaviour {
         }
     }
 
-    void Update()
+    void OnTriggerExit(Collider other)
     {
-        var targetRotation = Quaternion.LookRotation(target.transform.position - transform.position);
-
-        // Smoothly rotate towards the target point.
-        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, thrust * Time.deltaTime);
+        //untarget player
+        if (other.gameObject.CompareTag("Player"))
+        {
+            target = null;
+        }
     }
 }

@@ -23,12 +23,12 @@ public class CannonBall : MonoBehaviour {
 					rb.AddExplosionForce(1000f, explosionPos, 2f, 1f);
 				}
 			}
-
-
             Destroy(gameObject);
-
-
-
         }
+        if (collision.gameObject.CompareTag("destroyAmmo"))
+        {
+            Destroy(gameObject);
+        }
+       
     }
 }
