@@ -1,12 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:ISUGDCF16/Assets/Models/platformL.blend.meta
-guid: d8813327d99061e46bdfa78c474b4664
-timeCreated: 1477197729
-=======
 guid: a273faf6f383ad94bbbd4b98fb0c8eca
-timeCreated: 1477235107
->>>>>>> ad4e94eb666db50e1a5c6855fd146c3a4a2fe2d3:ISUGDCF16/Assets/Models/platformL 1.blend.meta
-licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
@@ -41,7 +34,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
