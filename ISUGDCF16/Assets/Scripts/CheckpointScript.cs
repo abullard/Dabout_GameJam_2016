@@ -9,9 +9,9 @@ public class CheckpointScript : MonoBehaviour {
     //Set's player's spawn point, and displays 
     void OnTriggerEnter(Collider other) {
         if(other.gameObject.CompareTag("Player")) {
-            Player.player.setSpawn(transform);
-            checkpointText.text = "Checkpoint";
-            Invoke("hideText", 2f);
+                Player.player.setSpawn(transform);
+                checkpointText.text = "Checkpoint";
+                Invoke("hideText", 2f);
         }
     }
 
