@@ -5,7 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - checkpoint
-  - projectileDestoryer
+  - projectile
+  - destroyAmmo
   layers:
   - Default
   - TransparentFX

@@ -25,6 +25,10 @@ public class CannonBall : MonoBehaviour {
 			}
             Destroy(gameObject);
         }
+        if (collision.gameObject.CompareTag("destroyAmmo"))
+        {
+            Destroy(gameObject);
+        }
        
     }
 }

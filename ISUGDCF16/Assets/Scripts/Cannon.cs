@@ -5,6 +5,7 @@ public class Cannon : MonoBehaviour
 {
     public GameObject prefab;
     public float thrust;
+    public Transform target;
     public Transform defaultTarget;
 
     // Update is called once per frame
@@ -17,6 +18,23 @@ public class Cannon : MonoBehaviour
             GameObject projectile = (GameObject)Instantiate(prefab, transform.position, transform.rotation);
             projectile.GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward * thrust, ForceMode.VelocityChange);
             yield return new WaitForSeconds(1.5f);
+        }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            target = other.gameObject.transform;
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        //untarget player
+        if (other.gameObject.CompareTag("Player"))
+        {
+            target = null;
         }
     }
 }
