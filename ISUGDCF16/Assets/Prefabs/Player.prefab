@@ -663,7 +663,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: d7f06f28655804f5faaaca2287d6ff02, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -681,6 +681,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endurance: 1
   recoveryRate: 0.2
+  recovering: 0
   runSpeed: 10
   jumpSpeed: 6
   uprightTension: 10
@@ -697,7 +698,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012430193558}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cfba286e31a16434bb2b29fdab4a634c, type: 3}
   m_Name: 
@@ -730,7 +731,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
+  m_Radius: 0.3
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}

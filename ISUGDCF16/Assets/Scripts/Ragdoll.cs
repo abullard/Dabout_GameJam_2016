@@ -16,9 +16,13 @@ public class Ragdoll : MonoBehaviour{
 	void Start(){
 		GameObject ragPelvis = (GameObject)Instantiate(pelvis);
 		ragPelvis.name = pelvis.name;
+		//ragPelvis.transform.SetParent(transform);
+
+		Camera.main.GetComponent<CameraController>().player = gameObject;
 
 		SkinnedMeshRenderer skin = GetComponentInChildren<SkinnedMeshRenderer>();
 		skin = ((GameObject)Instantiate(skin.gameObject)).GetComponent<SkinnedMeshRenderer>();
+		//skin.transform.SetParent(transform);
 		GetComponentInChildren<SkinnedMeshRenderer>().material = invisible;
 
 		Transform[] armJoints = pelvis.GetComponentsInChildren<Transform>();
@@ -40,13 +44,23 @@ public class Ragdoll : MonoBehaviour{
 					ragJoints[r].gameObject.AddComponent<SphereCollider>().radius = 0.1f;
 					//ragJoints[r].GetComponent<Rigidbody>().useGravity = false;
 					ragJoints[r].GetComponent<Rigidbody>().interpolation = RigidbodyInterpolation.Interpolate;
-					ragJoints[r].transform.parent = null;
-					Debug.Log("Linking " + armJoints[a].name + " and " + ragJoints[r].name);
+
+					//Debug.Log("Linking " + armJoints[a].name + " and " + ragJoints[r].name);
 				}
 			}
 		}
 
 		skin.bones = ragJoints;
+
+		//SpringJoint mainSpring = ragJoints[0].GetComponent<SpringJoint>();
+		//mainSpring.spring = 100f;
+
+		for(int i = 0; i < ragJoints.Length; i++){
+			if(ragJoints[i].transform.parent && ragJoints[i].transform.parent.GetComponent<Rigidbody>()){
+				ragJoints[i].gameObject.AddComponent<SpringJoint>().connectedBody = ragJoints[i].transform.parent.GetComponent<Rigidbody>();
+				//ragJoints[i].transform.parent = null;
+			}
+		}
 	}
 
 	void FixedUpdate(){
