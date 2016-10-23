@@ -267,11 +267,6 @@ Prefab:
       propertyPath: spawnAt
       value: 
       objectReference: {fileID: 2052079615}
-    - target: {fileID: 114000013293848486, guid: 131284f6ef78e344c888e4779b7eb3ea,
-        type: 2}
-      propertyPath: invisible
-      value: 
-      objectReference: {fileID: 2100000, guid: 3366e4aa627b04bd0836dbe3d9c5e67c, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 131284f6ef78e344c888e4779b7eb3ea, type: 2}
   m_IsPrefabParent: 0

@@ -647,7 +647,7 @@ MonoBehaviour:
   pelvis: {fileID: 1000012487784384}
   maxSpring: 100
   maxDamp: 1
-  invisible: {fileID: 2100000, guid: d39960c14dfaf88489d1798913453dd1, type: 2}
+  invisible: {fileID: 2100000, guid: 3366e4aa627b04bd0836dbe3d9c5e67c, type: 2}
   springJoints: []
 --- !u!136 &136000013180861750
 CapsuleCollider:
