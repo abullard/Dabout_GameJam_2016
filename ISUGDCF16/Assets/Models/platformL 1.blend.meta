@@ -1,22 +1,20 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:ISUGDCF16/Assets/Models/platformL.blend.meta
 guid: d8813327d99061e46bdfa78c474b4664
 timeCreated: 1477197729
+=======
+guid: a273faf6f383ad94bbbd4b98fb0c8eca
+timeCreated: 1477235107
+>>>>>>> ad4e94eb666db50e1a5c6855fd146c3a4a2fe2d3:ISUGDCF16/Assets/Models/platformL 1.blend.meta
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: Cube
-    100002: Cube_001
-    100004: //RootNode
-    400000: Cube
-    400002: Cube_001
-    400004: //RootNode
-    2300000: Cube
-    2300002: Cube_001
-    3300000: Cube
-    3300002: Cube_001
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
     4300000: Cube
-    4300002: Cube_001
     7400000: Default Take
     9500000: //RootNode
   materials:
