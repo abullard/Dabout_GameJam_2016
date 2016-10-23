@@ -3,8 +3,8 @@ using System.Collections;
 
 public class MovingTile : MonoBehaviour {
 
-    public float rightMax = 8.3f;
-    public float leftMax = -8.5f;
+    public float rightMax;
+    public float leftMax;
     private bool dirRight = true;
     public float speed;
 
@@ -25,9 +25,9 @@ public class MovingTile : MonoBehaviour {
     void Update()
     {
         if (dirRight)
-            transform.Translate(Vector3.left * speed * Time.deltaTime);
-        else
             transform.Translate(Vector3.right * speed * Time.deltaTime);
+        else
+            transform.Translate(Vector3.left * speed * Time.deltaTime);
 
         if (transform.position.x >= rightMax)
         {

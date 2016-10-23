@@ -23,12 +23,12 @@ public class SettingSun : MonoBehaviour {
     void Update () {
         if(curPos.z == startZ)
         {
-            startPos = new Vector3(startX, startY, startZ);
+            startPos = new Vector3(startX, startY, startZ+1);
             endPos = new Vector3(endX, endY, endZ);
         }
         if (curPos.z == endZ)
         {
-            startPos = new Vector3(endX, endY, endZ);
+            startPos = new Vector3(endX, endY, endZ-1);
             endPos = new Vector3(startX, startY, startZ);
         }
 
