@@ -51,10 +51,9 @@ public class Ragdoll : MonoBehaviour{
 
 	void FixedUpdate(){
 		float e = Player.player.endurance;
-		e*=e*e;
 		for(int i = 0; i < springJoints.Count; i++){
 			springJoints[i].transform.rotation = springJoints[i].connectedBody.transform.rotation;
-			springJoints[i].spring = maxSpring * e;
+			springJoints[i].spring = maxSpring * e;// * i/springJoints.Count;
 			Debug.DrawLine(springJoints[i].transform.position, springJoints[i].connectedBody.position, Color.magenta);
 		}
 	}
